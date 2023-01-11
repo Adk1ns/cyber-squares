@@ -16,6 +16,12 @@ const IntroStyles = styled.div`
     font-weight: bold;
     padding: 1rem;
     cursor: pointer;
+    background-color: white;
+    border: 1px solid white;
+    margin: -1px;
+    &:hover {
+      color: #1ac5b0;
+    }
   }
   .name {
     font-size: 1em;
@@ -39,6 +45,7 @@ const Intro = () => {
   const playGame = () => {
     setGameView('game')
   }
+
   return (
     <IntroStyles>
       <p className="">Cyber Squares</p>
