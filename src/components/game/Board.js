@@ -4,8 +4,8 @@ import './Board.css'
 
 class Board extends Component {
   static defaultProps = {
-    nrows: 5,
-    ncols: 5,
+    nrows: 7,
+    ncols: 7,
     chanceLightStartsOn: 0.25,
   }
   constructor(props) {
@@ -88,14 +88,14 @@ class Board extends Component {
       <div>
         {this.state.hasWon ? (
           <div className="winner">
-            <span className="neon-orange">YOU</span>
+            <span className="neon-pink">YOU</span>
             <span className="neon-blue">WIN!</span>
           </div>
         ) : (
           <div>
             <div className="Board-title">
-              <div className="neon-orange">Lights</div>
-              <div className="neon-blue">Out</div>
+              <div className="neon-pink">Cyber</div>
+              <div className="neon-blue">Squares</div>
             </div>
             {this.makeTable()}
           </div>
